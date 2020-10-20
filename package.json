@@ -1,0 +1,47 @@
+{
+  "name": "leap-audio",
+  "version": "0.0.1",
+  "description": "Experimental usage of Leap Motion to create sounds",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaimpeck/leap-audio.git"
+  },
+  "keywords": [
+    "leap motion",
+    "audio"
+  ],
+  "author": "Jeff Peck <chaimpeck@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chaimpeck/leap-audio/issues"
+  },
+  "homepage": "https://github.com/chaimpeck/leap-audio#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^4.3.0",
+    "prettier": "2.1.2",
+    "pretty-quick": "^3.1.0",
+    "ts-loader": "^5.3.1",
+    "typescript": "^3.2.1",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "leapjs": "^0.6.4",
+    "regl": "^2.0.1",
+    "rxjs": "^6.6.3",
+    "tone": "^14.7.58"
+  }
+}
